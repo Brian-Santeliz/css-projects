@@ -23,7 +23,21 @@ h2 {
 }
 
 .contenedor-flex {
-    
+    display:inline-flex;
+    border:5px solid red;
+    /* Direccion Flex */
+    flex-direction:row;
+}
+.contenedor-flex2 {
+    margin-top:1em;
+    display:flex;
+    border:5px solid red;
+    /* Direccion Flex */
+    flex-direction:row-reverse;
+    /* flex-wrapn  Se usa comun con flex-direction: row; */
+    flex-wrap: wrap-reverse;
+    /* Flex Flow combinacion de direction/wrap */
+    flex-flow: row wrap;
 }
 
 .elemento-flex {
