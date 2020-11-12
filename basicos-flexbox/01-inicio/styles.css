@@ -29,7 +29,6 @@ h2 {
     flex-direction:row;
 }
 .contenedor-flex2 {
-    margin-top:1em;
     display:flex;
     border:5px solid red;
     /* Direccion Flex */
@@ -38,28 +37,35 @@ h2 {
     flex-wrap: wrap-reverse;
     /* Flex Flow combinacion de direction/wrap */
     flex-flow: row wrap;
+
+    /* Alinear elementos */
+    justify-content:space-evenly;
+    align-items: flex-end;
+    height: 200px;
 }
 .elemento-flex{
     padding: 10px;
+    border-radius: 5px;
     /* Hace que aumenta */
-    flex:2 0 40%
+    /* flex:1 0 auto; */
 
 
 }
 .elemento-flex:nth-child(1) {
     background-color: #E53935;
+    align-self: flex-start;
 }
 
 .elemento-flex:nth-child(2) {
-    flex-grow: 0;
     /* Deshace el aumento, Debe estar flex-grow: 0; */
-    flex-shrink: 0;
     background-color: #8E24AA;
     /* FLex basis es el ancho minimo */
-    flex-basis: 15%;
 }
 
 .elemento-flex:nth-child(3) {
+    /* align-self. Funciona para los hijos */
+    align-self: center;
+
     /* esta propieda corresponde a los hijos. */
     background-color: #3F51B5;
     /* Shorthand para flex-grow, flex-shrink, flex-basis; */
