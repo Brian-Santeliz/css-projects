@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flexbox Proyecto</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles.css">
     
 </head>
@@ -14,13 +14,13 @@
     <div class="contenedor">
 
         <header class="header-sitio">
-                <h1>Nombre Sitio</h1>
+                <h1>Brian Flex</h1>
                 <nav>
-                        <a href="#">Inicio</a>
-                        <a href="#">Nosotros</a>
-                        <a href="#">Servicios</a>
-                        <a href="#">Portafolio</a>
-                        <a href="#">Contacto</a>
+                    <a href="#">Inicio</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Servicios</a>
+                    <a href="#">Portafolio</a>
+                    <a href="#">Contacto</a>
                 </nav>
         </header>
 
@@ -53,10 +53,16 @@
         </main>
 
         <footer>
-            <p>Todos los derechos reservados</p>
+            <p >
+                Todos los derechos reservados <span id="footer"></span>
+            </p>
         </footer>
  
     </div>
     
 </body>
+<script>
+    const  fecha  = new Date().getFullYear()
+    document.getElementById("footer").innerHTML = fecha;
+</script>
 </html>
